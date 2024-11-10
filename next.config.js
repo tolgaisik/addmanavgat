@@ -6,7 +6,7 @@ module.exports = {
 
   trailingSlash: SITE.trailingSlash,
   basePath: SITE.basePathname !== '/' ? SITE.basePathname : '',
-
+  output: 'export',
   swcMinify: true,
   poweredByHeader: false,
   images: {
@@ -20,5 +20,5 @@ module.exports = {
         hostname: 'source.unsplash.com',
       },
     ],
-  }
+  },
 };
