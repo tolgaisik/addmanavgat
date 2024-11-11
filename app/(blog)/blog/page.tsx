@@ -9,16 +9,8 @@ export const metadata: Metadata = {
   title: 'Blog',
 };
 
-export async function generateStaticParams() {
+export default async function Home({}) {
   const posts = await findLatestPosts();
-  console.log(posts);
-  return posts.map(({ slug }: { slug: string }) => ({ params: { slug } }));
-}
-
-let posts = [];
-
-export default async function Home({ params }) {
-  console.log(params.slug);
   return (
     <section className="mx-auto max-w-3xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
       <header>
