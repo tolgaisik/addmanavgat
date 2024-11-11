@@ -9,6 +9,7 @@ import Footer2 from '~/components/widgets/Footer2';
 
 import { Righteous as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
+import { AppProps } from 'next/app';
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -27,20 +28,21 @@ export const metadata: Metadata = {
   description: SITE.description,
 };
 
-export default function RootLayout({ children }: LayoutProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <html lang="en" className={`motion-safe:scroll-smooth 2xl:text-[24px] `}>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className={customfont.className + '  antialiased text-gray-900 dark:text-slate-300 dark:bg-slate-900'}>
-        <Providers>
-          <Header />
-          <main>{children}</main>
-          <Footer2 />
-        </Providers>
-      </body>
-    </html>
+    <Providers>
+      <style jsx global>{`
+        html {
+          font-family: ${customfont.style.fontFamily};
+        }
+      `}</style>
+      <Header />
+      <main>
+        <Component {...pageProps} />
+      </main>
+      <Footer2 />
+    </Providers>
   );
 }
+
+export default MyApp;

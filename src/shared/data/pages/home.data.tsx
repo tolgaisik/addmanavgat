@@ -49,15 +49,16 @@ export const heroHome: HeroProps = {
       <span className=" italic">
         &quot;Arkadaşlarımız ve milletin bütün fertleri gibi, millî davamızda benim de emeğim geçmiş ise, bu çalışmada
         iş yapma kuvveti ve başarı varsa, bunu bana mal etmeyiniz. Ancak ve ancak bütün milletin manevî kişiliğine mal
-        ediniz. &quot;
+        ediniz.&quot;
       </span>
+      <br />
       <cite>Mustafa Kemal Atatürk</cite>
     </>
   ),
-  callToAction: { text: 'Etkinlikler', href: '/etkinlik' },
+  callToAction: { text: 'Etkinlikler', href: '/etkinlikler' },
   callToAction2: {
     text: 'Daha Fazla Bilgi',
-    href: '/about',
+    href: '#hakkimizda',
   },
   image: {
     src: heroImg,
@@ -95,7 +96,7 @@ export const socialProofHome: SocialProofProps = {
 
 // Features data on Home page *******************
 export const featuresHome: FeaturesProps = {
-  id: 'features-on-home',
+  id: 'hakkimizda',
   hasBackground: false,
   columns: 3,
   header: {
