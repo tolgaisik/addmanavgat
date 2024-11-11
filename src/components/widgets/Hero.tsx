@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
+import hero from '~/assets/images/hero.png';
 
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
   return (
@@ -30,13 +31,12 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             <div className="relative m-auto max-w-5xl">
               <Image
                 className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
-                src={image.src}
+                src={hero}
                 alt={image.alt}
                 width={1024}
                 height={607}
                 sizes="(max-width: 64rem) 100vw, 1024px"
                 loading="eager"
-                placeholder="blur"
                 priority
               />
             </div>

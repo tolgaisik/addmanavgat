@@ -33,39 +33,31 @@ import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
+import cameraFrontImg from '~/assets/images/kadinlar.png';
+import cameraBackImg from '~/assets/images/meclis.png';
+import gasImg from '~/assets/images/manavgat.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      Manavgat Atatürkçü Düşünce Derneği <span className="hidden md:inline"> </span> <span></span>{' '}
     </>
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
-        </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
-      </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      <blockquote className=" italic">
+        &quot;Arkadaşlarımız ve milletin bütün fertleri gibi, millî davamızda benim de emeğim geçmiş ise, bu çalışmada
+        iş yapma kuvveti ve başarı varsa, bunu bana mal etmeyiniz. Ancak ve ancak bütün milletin manevî kişiliğine mal
+        ediniz. &quot;
+      </blockquote>
+      <cite>Mustafa Kemal Atatürk</cite>
     </>
   ),
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
-  },
+  callToAction: { text: 'Etkinlikler', href: '/etkinlik' },
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'Daha Fazla Bilgi',
+    href: '/about',
   },
   image: {
     src: heroImg,
@@ -109,71 +101,51 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        Kısaca üstlendiğimiz görevler <span className="hidden md:inline"> </span> <span></span>{' '}
       </>
     ),
     subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-    tagline: 'Features',
+      "Dernek olarak üstlendiğimiz görev, Atatürk ilke ve inkılapları doğrultusunda, Atatürkçü düşünceyi yaymak, Atatürk'ün fikir ve devrimlerini yaşatmak, korumak ve geliştirmek, halkımıza milli kültürümüzü ve tarihimizi öğretmektir.",
+    tagline: 'Biz Kimiz ?',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Kuruluş Amacı',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        "Atatürkçü Düşünce Derneği, Mustafa Kemal Atatürk'ün ilke ve inkılaplarını koruyup yaşatmak, onun fikirlerini topluma yaymak amacıyla 1989 yılında kurulmuştur.",
       icon: IconBrandTailwind,
       callToAction: {
-        text: 'Discover now',
+        text: 'Daha Fazla Bilgi',
         href: '/',
       },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Temel İlkeler',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        "Dernek, Atatürk'ün laiklik, cumhuriyetçilik, milliyetçilik, halkçılık, devrimcilik ve devletçilik ilkelerini savunur ve bu değerleri toplumsal hayatta egemen kılmayı hedefler.",
       icon: IconComponents,
       callToAction: {
-        text: 'Discover now',
+        text: 'Daha Fazla Bilgi',
         href: '/',
       },
     },
     {
-      title: 'Best Practices',
+      title: 'Eğitim ve Bilinçlendirme',
       description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
+        'Atatürkçü düşünceyi yaymak için seminerler, konferanslar düzenler, yayınlar çıkarır ve öğrencilere yönelik eğitim faaliyetleri yürütür.',
       icon: IconListCheck,
       callToAction: {
-        text: 'Discover now',
+        text: 'Daha Fazla Bilgi',
         href: '/',
       },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Sosyal Katkı:',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
-      icon: IconArrowsRightLeft,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
+        "Dernek, Türkiye'nin çağdaş medeniyetler seviyesine ulaşabilmesi için toplumsal, kültürel ve siyasi alanlarda aktif olarak çalışmalar yapar ve toplumu bilinçlendirir.",
       icon: IconBulb,
       callToAction: {
-        text: 'Discover now',
+        text: 'Daha Fazla Bilgi',
         href: '/',
       },
     },
@@ -185,27 +157,26 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: 'Atatürkçü Düşünce Toplumsal Bir Harekettir',
+    subtitle: 'Atatürkçü düşünce, Mustafa Kemal Atatürk’ün ilke ve inkılaplarına bağlılıkla tanımlanır.',
+    tagline: 'Faydalı Bilgiler',
   },
-  content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+  content: 'Atatürkçü Düşüncenin toplumsal faydaları',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Toplumsal Birlik ve Beraberlik',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Atatürkçü düşünce, farklı kültür ve kimliklere sahip bireyler arasında ortak bir değerler zemini oluşturur. Laik, demokratik ve çağdaş bir toplum anlayışı, toplumsal huzuru ve birlikte yaşamayı teşvik eder. Bu, toplumun farklı kesimlerinin eşit haklara sahip olmasını ve birbirlerine saygılı bir şekilde yaşamalarını sağlar.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Çağdaşlaşma ve Gelişme',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        "Atatürkçü düşünce, bilimsel düşünceyi ve teknolojik ilerlemeyi temel alır. Atatürk’ün eğitim, bilim ve sanata verdiği önem, Türkiye'nin modernleşmesi için güçlü bir zemin oluşturur. Bu düşünce, ülkenin küresel düzeyde rekabet edebilmesi için bilimsel ve kültürel gelişmeyi teşvik eder.",
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Hukuk ve Adaletin Güçlenmesi',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Atatürkçü düşünce, hukukun üstünlüğü ilkesini savunur ve adaletin toplumda her birey için eşit şekilde sağlanması gerektiğini vurgular. Laik ve demokratik bir hukuk düzeni, bireylerin haklarını güvence altına alır ve devletin gücünü halkın hizmetine sunar. Bu da toplumsal düzenin sağlıklı işlemesine katkı sağlar.',
     },
   ],
   image: {
@@ -220,26 +191,19 @@ export const contentHomeOne: ContentProps = {
 export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
-  content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+  content: 'Atatürkçü Düşünceyi Benimseyen Bireylerin İlkeleri ve Değerleri',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Bilim ve akıl yoluyla toplumsal gelişmenin sağlanması gerektiğine inanır.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Din ve devlet işlerini birbirinden ayırarak, her bireyin inanç özgürlüğünü korur.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: "Türkiye'nin bağımsızlığını ve ulusal birliğini her şeyin önünde tutar.",
     },
     {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: "Atatürk'ün gerçekleştirdiği inkılapları benimser ve toplumsal yeniliklere açıktır.",
     },
   ],
   image: {
@@ -261,29 +225,29 @@ export const stepsHome: StepsProps = {
     alt: 'Steps image',
   },
   header: {
-    title: 'Sed ac magna sit amet risus tristique interdum.',
+    title: 'Manavgat Atatürkçü Düşünce Derneği Olarak Yaptığımız İşler',
   },
   items: [
     {
-      title: 'Step 1',
+      title: 'Sosyal Sorumluluk Projeleri',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        'Dernek olarak, çeşitli sosyal sorumluluk projeleri düzenleyerek topluma fayda sağlamayı hedefliyoruz. Eğitim, sağlık, çevre ve kültür alanlarında projeler geliştiriyor ve uyguluyoruz.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 2',
+      title: 'Eğitim ve Bilinçlendirme Faaliyetleri',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'Atatürkçü düşünceyi yaymak ve genç nesilleri Atatürk ilke ve inkılaplarıyla tanıştırmak amacıyla eğitim ve bilinçlendirme faaliyetleri düzenliyoruz. Okullarda, üniversitelerde ve sivil toplum kuruluşlarında eğitim seminerleri veriyoruz.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 3',
+      title: 'Kültürel Etkinlikler',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        "Atatürk'ün fikir ve devrimlerini yaşatmak ve korumak amacıyla kültürel etkinlikler düzenliyoruz. Sergiler, konferanslar, tiyatro oyunları ve paneller düzenleyerek toplumu bilinçlendiriyoruz.",
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'Daha Yaşanabilir Bir Manavgat!',
     },
   ],
 };
@@ -293,15 +257,15 @@ export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
   header: {
-    title: 'What our customers say about us',
+    title: 'İlçemizin İleri Gelenlerinden Gelen Yorumlar',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'Manavgat ilçemizin ileri gelenleri, Atatürkçü Düşünce Derneği hakkında neler düşündüklerini paylaşıyorlar.',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
+      name: 'Şükrü Sözen',
+      job: 'Vatandaş',
+      testimonial: `Manavgat Atatürkçü Düşünce Derneği, ilçemizin sosyal ve kültürel hayatına büyük katkılar sağlıyor. Derneğin düzenlediği etkinlikler, toplumun farklı kesimlerini bir araya getiriyor ve birlikte yaşama kültürünü güçlendiriyor.`,
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Tayla Kirsten',
@@ -309,9 +273,9 @@ export const testimonialsHome: TestimonialsProps = {
       href: '/',
     },
     {
-      name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
+      name: 'Mehmet Çiçek',
+      job: 'Vatandaş',
+      testimonial: `Atatürkçü Düşünce Derneği, ilçemizin kültürel ve tarihi mirasını korumak ve yaşatmak için önemli bir rol oynuyor. Dernek, genç nesillere Atatürk ilke ve inkılaplarını öğretmek ve onları bu değerlerle yetiştirmek için büyük çaba sarf ediyor.`,
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Silver Jordan',
@@ -319,9 +283,9 @@ export const testimonialsHome: TestimonialsProps = {
       href: '/',
     },
     {
-      name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
+      name: 'Aysel Kaya',
+      job: 'Vatandaş',
+      testimonial: `Manavgat Atatürkçü Düşünce Derneği, ilçemizin sosyal ve kültürel hayatına büyük katkılar sağlıyor. Derneğin düzenlediği etkinlikler, toplumun farklı kesimlerini bir araya getiriyor ve birlikte yaşama kültürünü güçlendiriyor.`,
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Kelsey Arden',
@@ -329,9 +293,9 @@ export const testimonialsHome: TestimonialsProps = {
       href: '/',
     },
     {
-      name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
+      name: 'Fatih Yılmaz',
+      job: 'Vatandaş',
+      testimonial: `Atatürkçü Düşünce Derneği, ilçemizin kültürel ve tarihi mirasını korumak ve yaşatmak için önemli bir rol oynuyor. Dernek, genç nesillere Atatürk ilke ve inkılaplarını öğretmek ve onları bu değerlerle yetiştirmek için büyük çaba sarf ediyor.`,
       image: {
         src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Sarah Johnson',
@@ -339,22 +303,12 @@ export const testimonialsHome: TestimonialsProps = {
       href: '/',
     },
     {
-      name: 'Keith Young',
-      job: 'Freelance Developer',
-      testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
+      name: 'Tolga Işık',
+      job: 'Vatandaş',
+      testimonial: `Manavgat Atatürkçü Düşünce Derneği, ilçemizin sosyal ve kültürel hayatına büyük katkılar sağlıyor. Derneğin düzenlediği etkinlikler, toplumun farklı kesimlerini bir araya getiriyor ve birlikte yaşama kültürünü güçlendiriyor.`,
       image: {
         src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Keith Young',
-      },
-      href: '/',
-    },
-    {
-      name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Lisa Gordon',
       },
       href: '/',
     },
@@ -366,35 +320,35 @@ export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
+    title: 'Sıkça Sorulan Sorular',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
-    tagline: 'FAQS',
+      'Atatürkçü Düşünce Derneği hakkında merak edilen sorular ve cevapları. Eğer sorunuzun cevabını bulamadıysanız, lütfen bizimle iletişime geçin.',
+    tagline: 'SSS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'Etkinliklerinize nasıl katılabilirim?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'Derneğin üyelik koşulları nelerdir?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'Derneğin faaliyetleri hakkında nasıl bilgi alabilirim?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: 'Derneğe nasıl bağış yapabilirim?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: 'Derneğin misyonu ve vizyonu nedir?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'Derneğin tarihçesi hakkında bilgi alabilir miyim?',
+      description: `Şimdilik buraya bir açıklama yazmadık.`,
     },
   ],
 };
@@ -494,9 +448,8 @@ export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
-    title: 'Team Members',
-    subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+    title: 'Ekip Üyeleri',
+    subtitle: 'Ekip üyelerimiz hakkında daha fazla bilgi almak için aşağıdaki bağlantılara tıklayabilirsiniz.',
     // tagline: 'Team',
   },
   teams: [
@@ -607,53 +560,54 @@ export const teamHome: TeamProps = {
 export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
-    title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
-    tagline: 'Contact',
+    title: 'Bizimle İletişime Geçin',
+    subtitle:
+      'Atatürkçü Düşünce Derneği hakkında daha fazla bilgi almak veya sorularınızı sormak için aşağıdaki formu doldurabilirsiniz.',
+    tagline: 'İletişim',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Atatürkçü Düşünce Derneği, Mustafa Kemal Atatürk’ün ilke ve inkılaplarına bağlılıkla tanımlanır. Dernek olarak, Atatürk ilke ve inkılaplarını koruyup yaşatmak, onun fikirlerini topluma yaymak amacıyla 1989 yılında kurulmuştur.',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Adresimiz',
+      description: ['Mahmut Yüksel Bulvarı No.12 Daire.1', 'Manavgat, Antalya, Türkiye'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'İletişim Bilgileri',
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: addmanavgat@gmail.com'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: 'Çalışma Saatleri',
+      description: ['Pazartesi - Cuma: 9:00 - 17:00', 'Cumartesi - Pazar: Kapalı'],
       icon: IconClock,
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'İletişim Formu',
     inputs: [
       {
         type: 'text',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'Your name',
+        placeholder: 'Adınız ve Soyadınız',
       },
       {
         type: 'email',
         name: 'email',
         autocomplete: 'on',
-        placeholder: 'Your email address',
+        placeholder: 'E-posta Adresiniz',
       },
     ],
     textarea: {
       cols: 30,
       rows: 5,
       name: 'textarea',
-      placeholder: 'Write your message...',
+      placeholder: 'Mesajınızı buraya yazınız',
     },
     btn: {
-      title: 'Send Message',
+      title: 'Gönder',
       type: 'submit',
     },
   },
@@ -661,26 +615,27 @@ export const contactHome: ContactProps = {
 
 // CallToAction data *******************
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
-  subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+  title: 'Atatürkçü Düşünce Derneği Hakkında Daha Fazla Bilgi Alın',
+  subtitle: '',
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
+    text: 'ADD Hakkında',
+    href: 'https://add.org.tr/',
     icon: IconDownload,
   },
   items: [
     {
-      title: 'Get template',
+      title: 'ADD Resmi Web Sitesi',
       description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
+      href: 'https://add.org.tr/',
+      target: '_blank',
     },
     {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
+      title: 'ADD Tüzüğü',
+      description: 'ADD tüzüğüne göz atmak için tıklayın.',
+      href: 'https://add.org.tr/tuzugumuz/',
+      target: '_blank',
     },
-    {
+    /* {
       title: 'Subscribe',
       description: 'Morbi orci nunc, euismod ac dui id, convallis.',
       form: {
@@ -696,6 +651,6 @@ export const callToAction2Home: CallToActionProps = {
           type: 'submit',
         },
       },
-    },
+    }, */
   ],
 };

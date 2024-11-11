@@ -10,6 +10,8 @@ import ToggleMenu from '../atoms/ToggleMenu';
 import { headerData } from '~/shared/data/global.data';
 import CTA from '../common/CTA';
 import { CallToActionType } from '~/shared/types';
+import Image from 'next/image';
+import imza from '~/assets/images/imza.svg';
 
 const Header = () => {
   const { links, actions, isSticky, showToggleTheme, showRssFeed, position } = headerData;
@@ -79,6 +81,7 @@ const Header = () => {
           >
             <Logo />
           </Link>
+
           <div className="flex items-center md:hidden">
             <ToggleMenu handleToggleMenuOnClick={handleToggleMenuOnClick} isToggleMenuOpen={isToggleMenuOpen} />
           </div>
