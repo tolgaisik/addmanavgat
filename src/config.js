@@ -1,10 +1,11 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'ADD Manavgat',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://addmanavgat.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'ADD Manavgat',
+  description:
+    'ADD Manavgat, Antalya, Türkiye, Atatürkçü Düşünce Derneği, ADD, ADD Manavgat Şubesi, ADD Manavgat Şubesi Resmi Web Sitesi, ADD Manavgat Şubesi',
 };

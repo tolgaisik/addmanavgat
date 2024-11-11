@@ -46,11 +46,11 @@ export const heroHome: HeroProps = {
   ),
   subtitle: (
     <>
-      <blockquote className=" italic">
+      <span className=" italic">
         &quot;Arkadaşlarımız ve milletin bütün fertleri gibi, millî davamızda benim de emeğim geçmiş ise, bu çalışmada
         iş yapma kuvveti ve başarı varsa, bunu bana mal etmeyiniz. Ancak ve ancak bütün milletin manevî kişiliğine mal
         ediniz. &quot;
-      </blockquote>
+      </span>
       <cite>Mustafa Kemal Atatürk</cite>
     </>
   ),
